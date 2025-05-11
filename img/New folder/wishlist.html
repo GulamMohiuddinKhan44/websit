@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ecommerce Website</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+   
+    <section class="header">
+        <a href="#"><img src="img/logo.png" alt=""></a>
+        <div>
+            <ul  class="navbar">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="blog.html">Blogs</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="wishlist.html"><i class="fa-solid fa-bag-shopping"></i><span id="count" ></span></a></li>
+                <li><a href="product.html"><i class="fa-brands fa-product-hunt"></i></a></li>
+            </ul>
+        </div>
+    </section>
+
+
+    <section class="contact-hero">
+        <div class="contact-hero-part">
+        <h2>#Let'S _Talk</h2>
+        <p>Leave A Message , We Love Hear With You</p>
+    </div>
+    </section>
+
+ <section class="cart section-p1" >
+      
+    <table width="100%">
+    <thead>
+        <tr>
+            <td>Remove</td>
+            <td>Image</td>
+            <td>Product</td>
+            <td>Price</td>
+            <td>Quantity</td>
+            <td>Subtotal</td>
+        </tr>
+    </thead>
+    <tbody id="wishlist">
+
+    </tbody>
+    </table>
+ </section>
+
+ <section class="cart-add section-p1">
+    <div class="coupen">
+        <h3>Apply Coupon</h3>
+        <div>
+            <input type="text" placeholder="Enter Your Coupon">
+            <button>Apply</button>
+        </div>
+    </div>
+    <div class="subtotal">
+        <h3>SubTotal</h3>
+        <table>
+            <tr>
+                <td>Card Subtotal</td>
+                <td>$15.1</td>
+            </tr>
+            <tr>
+                <td>Shiping</td>
+                <td>Free</td>
+            </tr>
+            <tr>
+                <td><strong>Total</strong></td>
+                <td><strong id="totalprice">$15.5</strong></td>
+            </tr>
+           
+        </table>
+        <button>Proceed To CheckOut</button>
+    </div>
+ </section>
+
+    <section class="newsletter section-p1">
+        <div class="newstext">
+            <h4>Sign Up For Newletters</h4>
+            <p>Get Email Updata AboutOur Lastest shop <span>Special offer</span></p>
+        </div>
+        <div class="sign">
+            <input type="text" placeholder="Enter The E-mail">
+            <button>SIGNUP</button>
+        </div>
+    </section>
+
+
+    <footer class="section-p1">
+        <div class="col">
+            <img class="logo" src="img/logo.png" alt="">
+            <h4>Contact</h4>
+            <p><strong>Address:</strong> Quadabad pakistan karachi Beecham towm</p>
+            <p><strong>Phone:</strong> +01 2222 365/ (03)000 22 145558</p>
+            <p><strong>hours:</strong> +01  10.00 -18.00, mon - sat</p>.
+            <div class="follow">
+                <h4>Follow Us</h4>
+                <div class="icon">
+                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-brands fa-whatsapp"></i>
+                </div>
+            </div>
+        </div>
+
+        <div class="col">
+            <h4>About US</h4>
+        <a href="#">About Us</a>
+        <a href="#">Delivery Information</a>
+        <a href="#">Privacy Policy</a>
+        <a href="#">Contact Us</a>
+        <a href="#">Terms & Conditions</a>
+        </div>
+
+        <div class="col">
+            <h4>My Account</h4>
+        <a href="#">Sign In</a>
+        <a href="#">Track My Order</a>
+        <a href="#">View Cart</a>
+        <a href="#">View Wishlist</a>
+        <a href="#">Helps</a>
+        </div>
+
+        <div class="col-install">
+            <h4>Install App</h4>
+            <p>From App Store Or Google Store</p>
+            <div class="row">
+                <img src="img/pay/app.jpg" alt="">
+                <img src="img/pay/play.jpg" alt="">
+            </div>
+            <p>Scured Payment Gateways</p>
+            <img src="img/pay/pay.png" alt="">
+
+        </div>
+        <div class="copyright">
+            <p>2024 @ Copyright by Farazshah</p>
+        </div>
+       
+    </footer>
+    
+    <script src="js/data.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/wish.js"></script>
+    <script src="js/product.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+</body>
+</html>
